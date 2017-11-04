@@ -1,11 +1,14 @@
+import java.util.Random;
 
 public class main {
+    private static long limit = 15;
     public static void main(String[] args) {
-        System.out.println("Hello, Sze Wai.");
+        System.out.println("Starting...");
 
-        Counter c = new Counter(60);
-        int value = c.getCount();
-        System.out.println(value);
+        LinkedList list = new LinkedList();
 
+        Random rand = new Random();
+        rand.ints(limit).forEach(n -> list.append(n));
+        list.readList();
     }
 }
