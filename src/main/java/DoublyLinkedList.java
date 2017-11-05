@@ -3,7 +3,7 @@ import java.util.Set;
 
 public class DoublyLinkedList {
 
-    public static final String name = "DLL";
+    public static final String name = "Doubly Linked List";
 
     private int size;
     private Node head;

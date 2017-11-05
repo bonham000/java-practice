@@ -5,7 +5,7 @@ interface Runner {
 
 class Exec {
     public void execute(Runner r) {
-        r.run("Sze Wai", 0);
+        r.run("Jim", 0);
     }
 }
 
