@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class LinkedList {
 
@@ -13,6 +12,16 @@ public class LinkedList {
 
     public long getSize() {
         return this.size;
+    }
+
+    public boolean hasValue(long value, Node current) {
+        if (current == null) current = this.root;
+        if (current.getValue() == value) return true;
+        if (current.getNext() != null) {
+            return hasValue(value, current.getNext());
+        } else {
+            return false;
+        }
     }
 
     public void append(long value) {
@@ -35,16 +44,13 @@ public class LinkedList {
         while (current != null) {
             Integer i = (int) (long) current.getValue();
             results.add(i);
-            System.out.println(i);
             if (current.getNext() != null) {
                 current = current.getNext();
             } else {
                 current = null;
             }
         }
-        results.forEach(val -> {
-            System.out.println(val);
-        });
+        results.forEach(val -> System.out.println(val));
     }
 
 }
