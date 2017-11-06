@@ -1,13 +1,13 @@
-import Pack.Backpack;
 
 public class main {
 
     public static void main(String[] args) {
         System.out.println("I love Java...");
 
-        Backpack bp = new Backpack();
+        Worker w = new Worker();
+        w.run();
 
-        System.out.println(bp.getContents());
+        System.out.println("End...");
 
     }
 }
