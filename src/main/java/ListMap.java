@@ -28,5 +28,5 @@ public class ListMap {
         System.out.println(complexList);
         inspect(complexList);
     }
-    
+
 }
