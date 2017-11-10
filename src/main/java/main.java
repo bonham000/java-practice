@@ -1,17 +1,24 @@
+import java.util.Random;
+
 public class main {
 
     public static void main(String[] args) {
         System.out.println("I love Java...");
 
-        Tree t = new Tree(15);
-        t.addValue(10);
-        t.addValue(1);
-        t.addValue(3);
-        t.addValue(17);
+        Tree t = new Tree();
+
+        long current = 0;
+        while (current < 15) {
+            t.addValue((Integer) new Random().nextInt(10));
+            current++;
+        }
+
         System.out.println(t.size());
         System.out.println(t.isBinaryTree());
 
-        System.out.println(t.getDescription());
+        System.out.println(t.traverse("Preorder"));
+        System.out.println(t.traverse("Inorder"));
+        System.out.println(t.traverse("PostOrder"));
 
     }
 }

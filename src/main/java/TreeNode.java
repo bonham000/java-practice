@@ -16,7 +16,7 @@ public class TreeNode implements TreeNodeInterface {
 
     @Override
     public Integer getValue() {
-        return 0;
+        return this.value;
     }
 
     @Override
