@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class LinkedList {
+public class LinkedList<S, T> {
 
     private int size;
     private Node root;
