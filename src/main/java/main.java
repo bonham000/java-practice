@@ -13,12 +13,13 @@ public class main {
             current++;
         }
 
-        System.out.println(t.size());
-        System.out.println(t.isBinaryTree());
+        System.out.println("Is it a binary tree? " + t.isBinaryTree());
 
         System.out.println(t.traverse("Preorder"));
         System.out.println(t.traverse("Inorder"));
         System.out.println(t.traverse("PostOrder"));
+
+        System.out.println(t.levelOrder());
 
     }
 }

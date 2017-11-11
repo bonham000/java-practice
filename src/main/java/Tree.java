@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 public class Tree implements TreeInterface {
 
@@ -38,6 +39,23 @@ public class Tree implements TreeInterface {
         if (node.getLeft() != null) recursePostOrder(node.getLeft());
         if (node.getRight() != null) recursePostOrder(node.getRight());
         this.result.add(node.getValue());
+    }
+
+    public ArrayList<Integer> levelOrder() {
+        TreeNode current;
+        ArrayList<Integer> result = new ArrayList<>();
+        LinkedList<TreeNode> q = new LinkedList<>();
+
+        q.add(this.root);
+        while (!q.isEmpty()) {
+            current = q.removeFirst();
+            result.add(current.getValue());
+            if (current.getLeft() != null) q.add(current.getLeft());
+            if (current.getRight() != null) q.add(current.getRight());
+        }
+
+        System.out.println("Level Order Traversal:");
+        return result;
     }
 
     public ArrayList<Integer> traverse(String type) {
