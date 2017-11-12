@@ -6,6 +6,7 @@ public class main {
         System.out.println("Starting...");
 
         Algorithm a = new Algorithm();
+        a.run();
 
     }
 }

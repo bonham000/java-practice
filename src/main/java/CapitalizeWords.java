@@ -2,8 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Algorithm {
-
+public class CapitalizeWords {
     private ArrayList<String> names = new ArrayList<String>() {{
         add("ron");
         add("sean");
@@ -16,9 +15,9 @@ public class Algorithm {
 
     private List<String> applyTransformation(ArrayList<String> names, Fn<String, String> transformer) {
         return names
-            .stream()
-            .map(s -> transformer.trns(s))
-            .collect(Collectors.toList());
+                .stream()
+                .map(s -> transformer.trns(s))
+                .collect(Collectors.toList());
     }
 
     public void run() {
@@ -40,5 +39,4 @@ public class Algorithm {
         System.out.println(applyTransformation(names, transformer));
 
     }
-
 }
