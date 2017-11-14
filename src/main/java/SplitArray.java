@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
-public class Algorithm {
+public class SplitArray {
 
-    public ArrayList<ArrayList<Integer>> run(ArrayList<Integer> array, Integer division) {
+    public ArrayList<ArrayList<Integer>> split(ArrayList<Integer> array, Integer division) {
 
         ArrayList<ArrayList<Integer>> results = new ArrayList<>();
         ArrayList<Integer> segment = new ArrayList<>();
