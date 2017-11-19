@@ -1,12 +1,9 @@
-import java.util.ArrayList;
 
 public class main {
 
     public static void main(String[] args) {
-        System.out.println("Starting...");
-
+        System.out.println("Java main...");
         Algorithm a = new Algorithm();
         a.run();
-
     }
 }
