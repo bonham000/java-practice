@@ -1,5 +1,5 @@
 public class Test {
-    public void test(Object expected, Object result) {
+    public boolean test(Object expected, Object result) {
         boolean passed = result.equals(expected);
         if (passed) {
             System.out.println("The test passed!");
@@ -8,5 +8,6 @@ public class Test {
         }
         System.out.println("Expected: \t" + expected);
         System.out.println("Found: \t\t" + result);
+        return passed;
     }
 }
