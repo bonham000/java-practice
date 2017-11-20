@@ -1,9 +1,7 @@
 
 public class Algorithm {
-
     public void run() {
-        System.out.println("Running SumAllPrimes...");
-        Test t = new Test();
+        System.out.println("Running Flatten...");
     }
 
 }
