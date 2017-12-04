@@ -1,7 +1,7 @@
 
 public class Algorithm {
     public void run() {
-        System.out.println("Running Flatten...");
-    }
+        System.out.println("Running...");
 
+    }
 }
